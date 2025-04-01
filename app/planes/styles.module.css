@@ -1,0 +1,37 @@
+.tabsContainer {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.tabsContainer::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.1) 80%, transparent);
+}
+
+.planSection {
+  transition: all 0.3s ease;
+}
+
+.wordpressSection {
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.03), transparent);
+}
+
+.shopifySection {
+  background: linear-gradient(to bottom right, rgba(59, 130, 246, 0.05), transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  .wordpressSection {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.03), transparent);
+  }
+
+  .shopifySection {
+    background: linear-gradient(to bottom right, rgba(59, 130, 246, 0.05), transparent);
+  }
+}
+
