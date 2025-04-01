@@ -21,7 +21,7 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormState((prev) => ({
       ...prev,
@@ -29,14 +29,14 @@ export default function ContactPage() {
     }))
   }
 
-  const handleSelectChange = (value) => {
+  const handleSelectChange = (value: string) => {
     setFormState((prev) => ({
       ...prev,
       service: value,
     }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
 
@@ -174,6 +174,20 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-medium">Teléfono</h3>
                   <p className="text-muted-foreground">+52 (998) 165-7293</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Phone className="h-5 w-5 mr-3 text-primary" />
+                <div>
+                  <h3 className="font-medium">WhatsApp</h3>
+                  <p className="text-muted-foreground">
+                    <a 
+                      href="https://wa.me/529981657293?text=Hola%2C%20quisiera%20que%20me%20ayudes%20a%20optimizar%20la%20velocidad%20de%20mi%20sitio."
+                      className="hover:text-primary transition-colors"
+                    >
+                      +52 (998) 165-7293
+                    </a>
+                  </p>
                 </div>
               </div>
             </CardContent>

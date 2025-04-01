@@ -6,11 +6,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Rutas estáticas principales
   const routes = [
     "",
-    "/services",
+    "/servicios",
     "/planes",
     "/nosotros",
     "/blog",
-    "/contact",
+    "/contacto",
     "/politica-de-privacidad",
     "/terminos-de-servicio",
     "/politica-de-cookies",
@@ -21,5 +21,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: route === "" ? 1 : 0.8,
   }))
 
-  return [...routes]
+  // Artículos del blog
+  const blogPosts = [
+    "/blog/velocidad-carga-afecta-ventas",
+    "/blog/core-web-vitals-guia",
+    "/blog/optimizacion-imagenes",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }))
+
+  return [...routes, ...blogPosts]
 } 

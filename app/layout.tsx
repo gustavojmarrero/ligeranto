@@ -85,10 +85,9 @@ export default function RootLayout({
               logo: "https://ligeranto.com/logo.svg",
               description: "Servicios profesionales de optimización de velocidad web para mejorar el rendimiento, la experiencia de usuario y el posicionamiento en buscadores.",
               sameAs: [
-                "https://twitter.com/Ligeranto",
-                "https://linkedin.com/company/Ligeranto",
-                "https://instagram.com/Ligeranto",
-                "https://youtube.com/Ligeranto"
+                "https://wa.me/529981657293",
+                "https://x.com/ligeranto",
+                "https://linkedin.com/company/ligeranto"
               ],
               address: {
                 "@type": "PostalAddress",
@@ -248,16 +247,16 @@ export default function RootLayout({
                     © 2025 Ligeranto. Todos los derechos reservados.
                   </p>
                   <div className="flex space-x-4">
-                    <Link href="#" className="text-muted-foreground hover:text-foreground">
-                      YouTube
+                    <Link 
+                      href="https://wa.me/529981657293?text=Hola%2C%20quisiera%20que%20me%20ayudes%20a%20optimizar%20la%20velocidad%20de%20mi%20sitio." 
+                      className="text-muted-foreground hover:text-foreground"
+                    >
+                      WhatsApp
                     </Link>
-                    <Link href="#" className="text-muted-foreground hover:text-foreground">
-                      Instagram
-                    </Link>
-                    <Link href="#" className="text-muted-foreground hover:text-foreground">
+                    <Link href="https://x.com/ligeranto" className="text-muted-foreground hover:text-foreground">
                       X
                     </Link>
-                    <Link href="#" className="text-muted-foreground hover:text-foreground">
+                    <Link href="https://linkedin.com/company/ligeranto" className="text-muted-foreground hover:text-foreground">
                       LinkedIn
                     </Link>
                   </div>
