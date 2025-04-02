@@ -1,4 +1,5 @@
 import type React from "react"
+import { Analytics } from "@vercel/analytics/react"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import Link from "next/link"
@@ -265,6 +266,7 @@ export default function RootLayout({
             </footer>
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
