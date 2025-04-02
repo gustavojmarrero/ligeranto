@@ -13,7 +13,6 @@ export default function robots(): MetadataRoute.Robots {
         ]
       }
     ],
-    sitemap: "https://ligeranto.com/sitemap.xml",
-    host: "https://ligeranto.com"
+    sitemap: "https://ligeranto.com/sitemap.xml"
   }
 } 
