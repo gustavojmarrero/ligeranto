@@ -18,7 +18,7 @@ function getPostData(slug: string) {
   // En un caso real, esto vendría de una base de datos o CMS
   const posts = {
     "velocidad-carga-afecta-ventas": {
-      title: "Velocidad de carga: Impacto en ventas de Shopify y WordPress",
+      title: "Velocidad de carga y su impacto en ventas",
       date: "15 de marzo de 2025",
       readTime: "8 min de lectura",
       image: "/images/velocidad.webp",

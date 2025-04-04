@@ -8,7 +8,7 @@ export default function BlogPage() {
   const blogPosts = [
     {
       id: "velocidad-carga-afecta-ventas",
-      title: "Velocidad de carga: Impacto en ventas de Shopify y WordPress",
+      title: "Velocidad de carga y su impacto en ventas",
       excerpt:
         "Descubre cómo cada segundo de retraso en la carga de tu sitio puede reducir tus conversiones y cómo optimizar tu tienda online para maximizar ventas.",
       date: "15 de marzo de 2025",

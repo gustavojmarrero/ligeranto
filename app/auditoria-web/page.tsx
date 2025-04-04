@@ -678,7 +678,7 @@ export default function AuditResults() {
       ) : (
         <div className="flex flex-col items-center justify-center py-12">
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold mb-4">Auditoría Gratuita de Velocidad Web con IA</h2>
+            <h1 className="text-2xl font-bold mb-4">Auditoría Gratuita de Velocidad Web con IA</h1>
             <p className="max-w-[700px] text-muted-foreground md:text-xl mb-8">
               Obtén un análisis completo impulsado por inteligencia artificial del rendimiento de tu sitio web y recomendaciones personalizadas y accionables.
             </p>
