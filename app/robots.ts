@@ -9,7 +9,8 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [
           "/admin", 
           "/private",
-          "/*.json$"
+          "/*.json$",
+          "/b4712a525b3d4884bbe9a22cb67699c2.txt"
         ]
       }
     ],
