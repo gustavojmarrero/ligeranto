@@ -93,12 +93,12 @@ export default function RootLayout({
               address: {
                 "@type": "PostalAddress",
                 addressCountry: "ES",
-                addressLocality: "España"
+                addressLocality: "México"
               },
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "customer service",
-                email: "contacto@Ligeranto.com"
+                email: "ligeranto@gmail.com"
               }
             })
           }}
