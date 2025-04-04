@@ -666,7 +666,7 @@ export default function AuditResults() {
                 <Link href="/servicios">Ver Nuestros Servicios</Link>
               </Button>
               <Button variant="outline" asChild>
-                <Link href="/contact">Contactar</Link>
+                <Link href="/contacto">Contactar</Link>
               </Button>
               <Button variant="secondary" onClick={handleRetry}>
                 <RefreshCw className="mr-2 h-4 w-4" />

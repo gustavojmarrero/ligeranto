@@ -75,7 +75,7 @@ export function MobileNav() {
           </nav>
           <div className="mt-auto border-t pt-6 flex flex-col gap-4">
             <Button asChild className="w-full" onClick={() => setOpen(false)}>
-              <Link href="/contact">Comenzar</Link>
+              <Link href="/contacto">Comenzar</Link>
             </Button>
             <Button asChild variant="outline" className="w-full" onClick={() => setOpen(false)}>
               <Link href="/auditoria-web">Auditoría Gratuita</Link>

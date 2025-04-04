@@ -89,7 +89,7 @@ export default function PlanesPage() {
                 </CardContent>
                 <CardFooter>
                   <Button className="w-full" asChild>
-                    <Link href="/contact">Contratar</Link>
+                    <Link href="/contacto">Contratar</Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -140,7 +140,7 @@ export default function PlanesPage() {
                 </CardContent>
                 <CardFooter>
                   <Button className="w-full" asChild>
-                    <Link href="/contact">Contratar</Link>
+                    <Link href="/contacto">Contratar</Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -188,7 +188,7 @@ export default function PlanesPage() {
                 </CardContent>
                 <CardFooter>
                   <Button className="w-full" asChild>
-                    <Link href="/contact">Contratar</Link>
+                    <Link href="/contacto">Contratar</Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -252,7 +252,7 @@ export default function PlanesPage() {
                 </CardContent>
                 <CardFooter>
                   <Button className="w-full" asChild>
-                    <Link href="/contact">Contratar</Link>
+                    <Link href="/contacto">Contratar</Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -298,7 +298,7 @@ export default function PlanesPage() {
                 </CardContent>
                 <CardFooter>
                   <Button className="w-full" asChild>
-                    <Link href="/contact">Contratar</Link>
+                    <Link href="/contacto">Contratar</Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -352,7 +352,7 @@ export default function PlanesPage() {
                 </CardContent>
                 <CardFooter>
                   <Button className="w-full" asChild>
-                    <Link href="/contact">Contratar</Link>
+                    <Link href="/contacto">Contratar</Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -404,7 +404,7 @@ export default function PlanesPage() {
 
         <div className="mt-12 text-center">
           <Button size="lg" asChild>
-            <Link href="/contact">Solicitar Consulta Personalizada</Link>
+            <Link href="/contacto">Solicitar Consulta Personalizada</Link>
           </Button>
         </div>
       </div>
