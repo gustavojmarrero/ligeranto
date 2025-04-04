@@ -49,9 +49,6 @@ export const metadata = {
     apple: { url: "/logo-icon.svg", type: "image/svg+xml" },
   },
   manifest: "/site.webmanifest",
-  alternates: {
-    canonical: "https://ligeranto.com"
-  },
   verification: {
     google: "tu-codigo-de-verificacion"
   }
