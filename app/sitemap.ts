@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next"
+import { getCanonicalBlogPosts } from "./lib/sitemapHelpers"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://ligeranto.com"
@@ -14,6 +15,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/politica-de-privacidad",
     "/terminos-de-servicio",
     "/politica-de-cookies",
+    "/auditoria-web",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -21,17 +23,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: route === "" ? 1 : 0.8,
   }))
 
-  // Artículos del blog
-  const blogPosts = [
-    "/blog/velocidad-carga-afecta-ventas",
-    "/blog/core-web-vitals-guia",
-    "/blog/optimizacion-imagenes",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }))
-
+  // Obtener posts del blog que sean canónicos
+  const blogPosts = await getCanonicalBlogPosts();
+  
   return [...routes, ...blogPosts]
 } 

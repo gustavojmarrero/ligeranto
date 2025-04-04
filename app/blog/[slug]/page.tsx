@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Calendar, Clock, Share2, Facebook, Twitter, Linkedin } from "lucide-react"
+import { Metadata } from "next"
 
 // Definir el tipo para los datos del post
 interface PostData {
@@ -328,6 +329,52 @@ function getPostData(slug: string) {
   const postCollection: { [key: string]: PostData } = posts;
 
   return postCollection[slug] || null
+}
+
+// Función para generar metadatos dinámicos
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const post = getPostData(params.slug);
+  
+  if (!post) {
+    return {
+      title: 'Artículo no encontrado | Ligeranto',
+    };
+  }
+  
+  // Extraer un fragmento de texto plano del contenido HTML para la descripción
+  const plainTextContent = post.content
+    .replace(/<[^>]*>/g, '') // Eliminar etiquetas HTML
+    .replace(/\s+/g, ' ')    // Normalizar espacios
+    .trim()
+    .substring(0, 160);      // Limitar a 160 caracteres
+  
+  return {
+    title: `${post.title} | Ligeranto`,
+    description: plainTextContent,
+    alternates: {
+      canonical: `https://ligeranto.com/blog/${params.slug}`,
+    },
+    openGraph: {
+      title: post.title,
+      description: plainTextContent,
+      url: `https://ligeranto.com/blog/${params.slug}`,
+      type: "article",
+      images: [
+        {
+          url: post.image || "/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: post.title
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: plainTextContent,
+      images: [post.image || "/og-image.jpg"]
+    }
+  };
 }
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
