@@ -13,7 +13,7 @@ export default function BlogPage() {
         "Descubre cómo cada segundo de retraso en la carga de tu sitio puede reducir tus conversiones y cómo optimizar tu tienda online para maximizar ventas.",
       date: "15 de marzo de 2025",
       readTime: "8 min de lectura",
-      image: "/images/velocidad.png",
+      image: "/images/velocidad.webp",
       category: "Optimización Web",
     },
     {
@@ -22,7 +22,7 @@ export default function BlogPage() {
       excerpt: "Todo lo que necesitas saber sobre las métricas de Core Web Vitals y cómo mejorarlas en tu sitio web.",
       date: "28 de febrero de 2025",
       readTime: "10 min de lectura",
-      image: "/images/Core_Web.png",
+      image: "/images/core_web.webp",
       category: "SEO Técnico",
     },
     {
@@ -32,7 +32,7 @@ export default function BlogPage() {
         "Aprende a optimizar tus imágenes sin perder calidad y mejora drásticamente el tiempo de carga de tu sitio.",
       date: "10 de febrero de 2025",
       readTime: "9 min de lectura",
-      image: "/images/imagenes.png",
+      image: "/images/imagenes.webp",
       category: "Rendimiento Web",
     },
   ]

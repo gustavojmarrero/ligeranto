@@ -20,7 +20,7 @@ function getPostData(slug: string) {
       title: "Cómo la velocidad de carga de tu sitio web afecta tus ventas en Shopify y WordPress",
       date: "15 de marzo de 2025",
       readTime: "8 min de lectura",
-      image: "/images/velocidad.png",
+      image: "/images/velocidad.webp",
       category: "Optimización Web",
       content: `
         <p class="lead">Si tienes una tienda online en Shopify o una página web en WordPress, la velocidad de carga puede ser el factor decisivo para captar o perder clientes. Una carga lenta no solo impacta negativamente en la experiencia del usuario, sino también reduce tus ventas y afecta la posición en buscadores como Google. En este artículo descubrirás por qué la velocidad es vital para tu negocio y cómo nuestro servicio especializado puede ayudarte a optimizar tu sitio web para mejorar tus resultados comerciales.</p>
@@ -107,7 +107,7 @@ function getPostData(slug: string) {
       title: "Guía Completa de Core Web Vitals para Principiantes",
       date: "28 de febrero de 2025",
       readTime: "10 min de lectura",
-      image: "/images/Core_Web.png",
+      image: "/images/core_web.webp",
       category: "SEO Técnico",
       content: `
         <h2>¿Qué son los Core Web Vitals y por qué son importantes?</h2>
@@ -214,7 +214,7 @@ function getPostData(slug: string) {
       title: "Técnicas Avanzadas de Optimización de Imágenes para Web",
       date: "10 de febrero de 2025",
       readTime: "9 min de lectura",
-      image: "/images/imagenes.png",
+      image: "/images/imagenes.webp",
       category: "Rendimiento Web",
       content: `
         <p class="lead">Las imágenes suelen ser el recurso más pesado en una página web, representando alrededor del 75% del peso total según estadísticas recientes de HTTP Archive. Esto influye significativamente en la velocidad de carga, experiencia del usuario y, en última instancia, en las conversiones y SEO. Un sitio lento puede provocar que hasta el 79% de los visitantes no regresen, afectando directamente tus ventas.</p>
